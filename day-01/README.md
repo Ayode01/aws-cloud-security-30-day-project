@@ -6,14 +6,14 @@
 
 | Item | Result |
 |---|---|
-| Account plan | Free Tier (no account plan was displayed in the console; the Free Tier page banner refers to a "free plan account") |
+| Account plan | Free Plan |
 | Current month cost or usage amount | Not shown |
-| Remaining credits | $129.62 (labelled "Total estimated amount remaining" on the Credits page) |
-| Credits expiry date | 25 August 2027 (from my notes; not visible in the screenshots) |
+| Remaining credits | $129.62 total estimated amount remaining and $130.20 total amount remaining |
+| Credits expiry date | 25 August 2027 (observation from my notes) |
 | Usage warnings | None |
 | Cost alert status | Activated |
 | Chosen Region | United States (N. Virginia) `us-east-1` |
-| Reason for Region choice | To be able to access my account's billing information |
+| Reason for Region choice | To be able to view CloudWatch billing metrics |
 
 ---
 
@@ -97,7 +97,7 @@ Selecting **Default Region** in the Features section opens a page where the Regi
 
 ![Fig 9 - Default Region set to US East N. Virginia us-east-1](evidence/09-default-region-us-east-1.png)
 
-I chose **United States (N. Virginia) us-east-1** because in this Region I am able to access my account's billing information. After choosing the Region, I saved the settings and they applied.
+I chose **United States (N. Virginia) us-east-1** because in this Region I am able to view CloudWatch billing metrics, this was however set in a previous internship I was involved in and not in this current exercise. After choosing the Region, I saved the settings and they applied.
 
 ---
 
