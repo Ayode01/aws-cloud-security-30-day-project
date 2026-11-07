@@ -60,7 +60,7 @@ To check the cost alerts on my AWS account, I went to **Billing preferences** in
 
 To give my IAM user permission to view billing information, I signed out of the IAM user and signed in as the root user. I then opened **Account** in the root user's account menu and looked at **IAM User and Role Access to Billing Information** to see whether it was enabled or disabled. While signed in as root, I clicked **Edit**, selected **Activate IAM Access** and saved it.
 
-After that, I signed out of the root account and signed back in to my IAM user. The Billing preferences page now showed details, and the Credits page finally showed credits as well.
+After that, I signed out of the root account and signed back in to my IAM user. The Billing preferences page now showed details which are AWS Free Tier alerts were set to deliver to the root account email and CloudWatch alerts were also set to deliver to CloudWatch, and the Credits page finally showed credits as well.
 
 **Fig. 6 and Fig. 7 – Results after the IAM user was given permission to view billing information**
 
