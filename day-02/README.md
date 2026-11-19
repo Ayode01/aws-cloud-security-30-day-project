@@ -114,16 +114,16 @@ Fig 15 shows the Console Home page of the IAM user.
 
 2) If someone learns my password, MFA adds another layer of protection for the account to ensure that an unauthorized user will not have access to the account. MFA ensures that only an authorized user can have access to an account because it provides three considerations; at least two of them must be fulfilled before a user can access an account. These considerations include: something they know (password), something they have (authentication code or a hardware security module), or something they are (biometrics). For a user to access an account, they must provide at least two of these considerations; that is why MFA is sometimes referred to as 2FA (two-factor authentication).
 
-3) NO, MFA does not provide perfect, absolute security over an AWS account. An AWS account can still be compromised if it has an access key through its command line. If a malicious actor is able to obtain an account's access key, they can gain access to that account through the command line, bypassing MFA.
+3) NO, MFA does not provide perfect, absolute security over an AWS account. An AWS account can still be compromised if it has an access key and secret key through its command line. If a malicious actor is able to obtain an account's access key and secret key, they can gain access to that account through the command line, bypassing MFA.
 
-4) No root access keys were listed, as seen in Fig 14. What this means is that one gap has been closed, as it is a best security practice to not have an access key on a root user
+4) No root access keys were listed, as seen in Fig 14. What this means is that there should be no access keys on the root user, as it is a best security practice to not have an access key on a root user
 
 5) The reason I signed out of root and back into the IAM user is that it is not best security practice to use the root user for daily and routine tasks, which is why the IAM user was created in the first place so we can use it to engage in daily tasks. The root user is only used in scenarios where its root credentials are needed to solve problems.
 
-6) One thing I could verify was that a root user and an IAM user  are two different user identities in an AWS account, observing from their sign-in process and their privileges, they are different identities in the same account with different privileges. The root user has higher privileges than the IAM user; that means it can do more things in a higher capacity than the IAM user.
+6) One thing I could verify was that a root user and an IAM user are two different user identities in an AWS account, observing from their sign-in process and their privileges, they are different identities in the same account with different privileges. The root user has higher privileges than the IAM user; that means it can do more things in a higher capacity than the IAM user.
 
 What I could not verify was because I have already set them up was the assignment of MFA on the root user, which I have done in the past in a previous internship.
 
 ## What I Learned
 
-It is important to set up MFA on the root user because it serves as a layer of defence against unauthorized access for the root user. Also, root user identity security is not the same for the IAM user security. So because, you have properly secured the root user identity, it does not mean that the IAM user identity has been automatically secured. You also have to set MFA for the IAM user.
+It is important to set up MFA because it adds another authentication factor and reduces the risk from a stolen password. Also, root user identity security is not the same for the IAM user security. So because, you have properly secured the root user identity, it does not mean that the IAM user identity has been automatically secured. You also have to set MFA for the IAM user.
